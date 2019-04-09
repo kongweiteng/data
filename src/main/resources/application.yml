@@ -3,5 +3,6 @@ spring:
     name: data
   data:
     elasticsearch:
-      url: http://39.96.77.2:9200
+      cluster-name: docker-cluster
+      cluster-nodes: 39.96.77.2:9300
 

@@ -1,16 +1,12 @@
 package com.datahub.data.es;
 
 import com.alibaba.fastjson.JSONObject;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
-
-@Service
+//@Service
 public class ESTempleService {
 
-    @Resource
-    ElasticsearchTemplate elasticsearchTemplate;
+//    @Resource
+//    ElasticsearchTemplate elasticsearchTemplate;
 
     public JSONObject get() {
 //        SumBuilder sb = AggregationBuilders.sum("tpPrice").field("payPrice");

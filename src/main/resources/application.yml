@@ -5,4 +5,7 @@ spring:
     elasticsearch:
       cluster-name: docker-cluster
       cluster-nodes: 39.96.77.2:9300
-
+  mvc:
+    static-path-pattern: /**
+server:
+  port: 8888

@@ -15,6 +15,17 @@ export const constantRouterMap = [
             // icon: 'iconfont icon-ziyuan'
         },
     },
+
+    {
+        path: '/test',
+        name: 'test',
+        component: () =>
+            import('../components/test.vue'),
+        meta: {
+            title: 'test',
+            // icon: 'iconfont icon-ziyuan'
+        },
+    },
     {
         path: '',
         redirect: '/hello',

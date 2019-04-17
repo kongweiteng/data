@@ -1,17 +1,24 @@
 <template>
     <div id="app">
+        <left></left>
         <router-view>
         </router-view>
+        <foot></foot>
     </div>
 </template>
 
 <script>
     // import HelloWorld from './components/HelloWorld.vue'
 
+    import foot from '@/components/foot/foot.vue'
+    import left from '@/components/left/left.vue'
+
     export default {
         name: 'app',
         components: {
             // HelloWorld
+            foot,
+            left
         }
     }
 </script>

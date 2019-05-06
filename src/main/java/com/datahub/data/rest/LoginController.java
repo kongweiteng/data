@@ -18,7 +18,7 @@ public class LoginController {
     public RespEntity<String> login() {
 
 
-        return RespEntity.ok("nihao");
+        return RespEntity.ok("admin-token");
 
     }
 

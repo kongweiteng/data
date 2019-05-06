@@ -3,14 +3,8 @@ package com.datahub.data.webmagic;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.model.ConsolePageModelPipeline;
-import us.codecraft.webmagic.model.OOSpider;
-import us.codecraft.webmagic.model.annotation.ExtractBy;
-import us.codecraft.webmagic.model.annotation.TargetUrl;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.processor.example.GithubRepoPageProcessor;
-
-import java.util.List;
 
 public class OschinaBlog implements PageProcessor {
     // 部分一：抓取网站的相关配置，包括编码、抓取间隔、重试次数等
@@ -40,7 +34,6 @@ public class OschinaBlog implements PageProcessor {
     public static void main(String[] args) {
 
         Spider.create(new GithubRepoPageProcessor())
-
                 //从"https://github.com/code4craft"开始抓
                 .addUrl("https://github.com/code4craft")
                 //开启5个线程抓取
@@ -48,5 +41,4 @@ public class OschinaBlog implements PageProcessor {
                 //启动爬虫
                 .run();
     }
-
 }

@@ -5,6 +5,3 @@ spring:
     static-path-pattern: /**
 server:
   port: 8888
-
-
-

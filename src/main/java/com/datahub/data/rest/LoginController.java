@@ -14,7 +14,7 @@ import java.util.Map;
 @RequestMapping("/user")
 public class LoginController {
 
-    @PostMapping("/login")
+    @PostMapping("/login1")
     public RespEntity<String> login() {
 
 

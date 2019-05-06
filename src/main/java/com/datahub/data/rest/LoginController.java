@@ -38,4 +38,13 @@ public class LoginController {
         return RespEntity.ok(map);
 
     }
+
+
+    @PostMapping("/logout")
+    public RespEntity<String> logout() {
+        return RespEntity.ok("ok");
+
+    }
+
+
 }
